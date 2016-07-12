@@ -1,7 +1,6 @@
+var controller = require('../controllers/users');
 var router = require('koa-router')();
 
-router.get('/', function (ctx, next) {
-  ctx.body = 'this a users response!';
-});
+router.get('/', controller.users);
 
 module.exports = router;
