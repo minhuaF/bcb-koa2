@@ -1,13 +1,11 @@
 var list = {
-    index: async function (ctx, next) {
+    login: async function (ctx, next){
         ctx.state = {
-            title: 'koa2 title'
+            title:'登录'
         };
-
-        await ctx.render('index', {
+        await ctx.render('index',{
             'name':'rainbow'
         });
     }
 }
-
 module.exports = list;
