@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>:<%=title%></title>
+</head>
+<body>
+    <div>
+    <%=users%>
+        <h2><%=info%></h2>
+        <% if (users.length) { %>
+            <ul>
+                <% users.forEach( function(user) { %>
+                    <li>id: <%=user.id%> ; name: <%=user.name%> ; password: <%=user.password%></li>
+                <% }) %>
+            </ul>
+        <% } %>
+    </div>
+</body>
+</html>

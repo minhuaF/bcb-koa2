@@ -8,6 +8,7 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')(); // 解析请求参数
 const logger = require('koa-logger');
+const db = require('./bin/db');
 
 // middlewares
 app.use(convert(bodyparser)); // post body 解析
@@ -23,7 +24,6 @@ app.use(views(__dirname + '/views', {
 //   extension: 'ejs'
 // }));
 
-
 // logger
 app.use(async (ctx, next) => {
   const start = new Date();
@@ -36,10 +36,12 @@ app.use(async (ctx, next) => {
 const index = require('./routes/index');
 const users = require('./routes/users');
 const login = require('./routes/login');
+const demo = require('./routes/demo');
 
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
 router.use('/login', login.routes(), login.allowedMethods());
+router.use('/demo', demo.routes(), demo.allowedMethods());
 
 app.use(router.routes(), router.allowedMethods());
 // response
@@ -48,6 +50,5 @@ app.on('error', (err, ctx) => {
   console.log("---------error:" + err);
   log.error('server error', err, ctx);
 });
-
 
 module.exports = app;
