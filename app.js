@@ -8,15 +8,15 @@ const json = require('koa-json');
 const onerror = require('koa-onerror');
 const bodyparser = require('koa-bodyparser')(); // 解析请求参数
 const logger = require('koa-logger');
-const db = require('./bin/db');
+const db = require('./config/db');
 
 // middlewares
 app.use(convert(bodyparser)); // post body 解析
 app.use(convert(json()));
 app.use(convert(logger()));
-app.use(convert(require('koa-static')(__dirname + '/public')));
+app.use(convert(require('koa-static')(__dirname + '/static')));
 
-app.use(views(__dirname + '/views', {
+app.use(views(__dirname + '/static/views', {
   extension: 'ejs'
 }));
 
@@ -33,10 +33,11 @@ app.use(async (ctx, next) => {
 });
 
 // routes
-const index = require('./routes/index');
-const users = require('./routes/users');
-const login = require('./routes/login');
-const demo = require('./routes/demo');
+const index = require('./application/routes/index');
+const users = require('./application/routes/users');
+const login = require('./application/routes/login');
+const demo = require('./application/routes/demo');
+
 
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());

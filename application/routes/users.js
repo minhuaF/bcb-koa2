@@ -1,5 +1,5 @@
-var controller = require('../controllers/users');
-var router = require('koa-router')();
+const controller = require('../controllers/users');
+const router = require('koa-router')();
 
 router.get('/', controller.users);
 
@@ -12,7 +12,7 @@ router.get('/group/:id', controller.getDataList);
 module.exports = router;
 
 
-// test URL
+// test URL 单独路由访问
 // http://localhost:3000/users
 // http://localhost:3000/users/post [id=123321]
 // http://localhost:3000/users/3

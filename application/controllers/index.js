@@ -1,4 +1,4 @@
-var list = {
+const list = {
     index: async function (ctx, next) {
         ctx.state = {
             title: 'koa2 title'

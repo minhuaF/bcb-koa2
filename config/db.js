@@ -1,5 +1,5 @@
 
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 // mongoose.Promise = global.Promise;
 
 // 以下MongoDB连接相关代码页可以独立出去，这里偷懒了

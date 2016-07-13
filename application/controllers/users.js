@@ -1,4 +1,4 @@
-var list = {
+const list = {
     users:async function (ctx, next) {
         ctx.state = {
             title: 'users test page'

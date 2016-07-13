@@ -1,5 +1,5 @@
-var UserModel = require('../models/user');
-var list = {
+const UserModel = require('../models/user');
+const list = {
 
     demo: function(ctx, next){
         ctx.body = '<h1>This is a demo page~</h1>'

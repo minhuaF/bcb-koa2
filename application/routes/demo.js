@@ -1,6 +1,6 @@
-var controller = require('../controllers/demo');
+const controller = require('../controllers/demo');
 
-var router = require('koa-router')();
+const router = require('koa-router')();
 
 router.get('/', controller.demo);
 router.get('/getone', controller.getOne);

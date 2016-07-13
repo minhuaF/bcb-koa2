@@ -1,4 +1,4 @@
-var list = {
+const list = {
     login: async function (ctx, next){
         ctx.state = {
             title:'登录'
