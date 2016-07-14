@@ -1,8 +1,6 @@
-// var controller = require('../controller/login');
+var controller = require('../controllers/login');
 const router = require('koa-router')();
 
-router.get('/', function (ctx, next) {
-    ctx.body = 'this a login response!';
-});
+router.get('/', controller.login);
 
 module.exports = router;

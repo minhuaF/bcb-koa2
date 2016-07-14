@@ -1,3 +1,4 @@
+// 导入中间件
 const Koa = require('koa');
 const app = new Koa();
 const router = require('koa-router')();
@@ -14,17 +15,16 @@ const db = require('./config/db');
 app.use(convert(bodyparser)); // post body 解析
 app.use(convert(json()));
 app.use(convert(logger()));
+
+// 设置静态资源目录
 app.use(convert(require('koa-static')(__dirname + '/static')));
 
-app.use(views(__dirname + '/static/views', {
-  extension: 'ejs'
+// 设置views的目录和所使用的模板
+app.use(views(__dirname + '/static', {
+  extension: 'html'
 }));
 
-// app.use(views(__dirname + '/views-ejs', {
-//   extension: 'ejs'
-// }));
-
-// logger
+// logger: 收到请求时，先执行这个generator方法
 app.use(async (ctx, next) => {
   const start = new Date();
   await next();
@@ -32,21 +32,24 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
-// routes
+// routes 路由
 const index = require('./application/routes/index');
 const users = require('./application/routes/users');
 const login = require('./application/routes/login');
 const demo = require('./application/routes/demo');
+const productlist = require('./application/routes/productlist');
 
-
+// 定义路由
 router.use('/', index.routes(), index.allowedMethods());
 router.use('/users', users.routes(), users.allowedMethods());
-router.use('/login', login.routes(), login.allowedMethods());
+router.use('/signin', login.routes(), login.allowedMethods());
 router.use('/demo', demo.routes(), demo.allowedMethods());
+router.use('/productlist', productlist.routes(), productlist.allowedMethods());
 
+// 使路由生效
 app.use(router.routes(), router.allowedMethods());
-// response
 
+// 监听错误
 app.on('error', (err, ctx) => {
   console.log("---------error:" + err);
   log.error('server error', err, ctx);

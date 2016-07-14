@@ -3,8 +3,8 @@ const list = {
         ctx.state = {
             title:'登录'
         };
-        await ctx.render('index',{
-            'name':'rainbow'
+        await ctx.render('',{
+            // 'name':'rainbow'
         });
     }
 }

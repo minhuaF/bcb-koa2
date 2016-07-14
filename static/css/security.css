@@ -1,0 +1,479 @@
+@charset "utf-8";
+
+#page{
+    padding-top: 93px;
+}
+.page1-bg{
+    background:#1c1c33 url("../images/page1-bg.png") no-repeat 0 95px;
+    width:100%;
+    height:100%;
+}
+.page1-center{
+    background:url("../images/page1-center.png") no-repeat;
+    width:310px;
+    height:305px;
+    position: absolute;
+    left: 26%;
+    top: 21%;
+}
+.page1-bg h2{
+    color:#fff;
+    font-size: 3.6rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding-top: 635px;
+    margin-bottom: 30px;
+}
+.page1-bg p{
+    font-size: 2.4rem;
+    color:#fff;
+}
+.page2-bg,
+.page3-bg,
+.page4-bg,
+.page5-bg,
+.page6-bg{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+.page2-bg h2,
+.page3-bg h2,
+.page4-bg h2,
+.page5-bg h2,
+.page6-bg h2{
+    color:#1c1c33;
+    font-size: 4rem;
+    padding-top: 174px;
+    font-weight: normal;
+}
+.page2-bg>p,
+.page3-bg>p,
+.page4-bg>p,
+.page5-bg>p,
+.page6-bg>p{
+    font-size: 2.6rem;
+    color:#1c1c33;
+    margin-top: 30px;
+}
+.page2-bg ul p{
+    font-size: 2.2rem;
+    color:#666;
+    margin-top: 12px;
+}
+.page2-bg ul {
+    margin:22px auto 0;
+}
+.page2-bg li{
+    float:left;
+    width: 320px;
+    margin-top: 40px;
+}
+.page2-bg ul span{
+    font-size: 1.8rem;
+    color:#999;
+    display: block;
+    margin-top: 20px;
+    line-height: 25px;
+}
+.page2-bg i{
+    display: block;
+    width:145px;
+    height:198px;
+    margin: 0 auto;
+}
+.elite i{
+    background: url("../images/security-man.png") no-repeat;
+}
+.income i{
+    background: url("../images/security-pig.png") no-repeat;
+}
+.age i{
+    background: url("../images/security-data.png") no-repeat;
+}
+.geolocation i{
+    background: url("../images/security-map.png") no-repeat;
+}
+.page3-bg ul{
+    margin-top: 40px;
+}
+.youmi{
+    margin-bottom: 40px;
+}
+.youmi p,
+.qixing p{
+    font-size: 2rem;
+    color:#666;
+    width:402px;
+    margin:10px auto 0;
+    line-height: 31px;
+}
+.youmi i,
+.qixing i{
+    display: block;
+    width:305px;
+    height:202px;
+    margin:0 auto;
+}
+.youmi i{
+    background: url("../images/youmi.png") no-repeat;
+}
+.qixing i{
+    background: url("../images/qixing.png") no-repeat;
+}
+.page5-bg{
+    background:#fff  url("../images/powerful.png") no-repeat 160px 456px;
+}
+.page5-bg span{
+    font-size: 2.4rem;
+    color:#fff;
+    display: block;
+    margin-top: 183px;
+    line-height: 35px;
+}
+.page5-bg ul{
+    font-size: 2.3rem;
+    color:#fff;
+    margin-left: 70px;
+}
+.page5-bg > p + ul{
+    margin-top: 45px;
+}
+.page5-bg span + ul{
+    margin-top: 172px;
+}
+.page5-bg li{
+    float:left;
+    background:url("../images/circle.png") no-repeat;
+    width:126px;
+    height:126px;
+}
+.page5-bg li+li{
+    margin-left: 250px;
+}
+.page5-bg li p:first-child{
+    padding-top: 39px;
+    padding-bottom: 13px;
+}
+.page6-bg{
+    background-color: #fff;
+}
+.page6-bg div i{
+    display: block;
+    background: url("../images/yfk.png") no-repeat;
+    width:165px;
+    height:60px;
+    margin:38px auto 10px;
+}
+.page6-bg div P{
+    font-size: 2rem;
+    color:#1c1c33;
+    letter-spacing: 2px;
+}
+.page6-bg li:first-child{
+    margin-top: 28px;
+}
+.page6-bg li:last-child{
+    margin-bottom: -40px;
+}
+.page6-bg li{
+    width:446px;
+    background-color: #fff2c3;
+    color: #ff961b;
+    padding-left: 25px;
+    margin:0 auto 20px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-size: 2rem;
+    position: relative;
+    border-radius: 10px;
+}
+.page6-bg h4{
+    font-size: 2.6rem;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: left;
+}
+.page6-bg ul p{
+    width:342px;
+    text-align: left;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+.page6-bg b{
+    display: inline-block;
+    background: url("../images/arrow.png") no-repeat;
+    width:18px;
+    height:27px;
+    position: absolute;
+    right: 28px;
+    top: 50%;
+
+}
+.page6-bg ul i{
+    position: absolute;
+    background:url("../images/stamp1.png") no-repeat;
+    width:80px;
+    height:80px;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #db3838;
+    text-align: center;
+    right: 6px;
+    top: 6px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.page6-bg li:nth-child(2) i{
+    background:url("../images/stamp2.png") no-repeat;
+}
+.page6-bg li:nth-child(3) i{
+    background:url("../images/stamp3.png") no-repeat;
+}
+.page6-bg li>span{
+    background: -webkit-linear-gradient(225deg, #ebd070 50%,#fff 50%,#fff);
+    width: 21px;
+    height: 25px;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -1px;
+    bottom: -2px;
+    overflow: hidden;
+}
+.page4-bg{
+    background: #fff url("../images/page3-bg.png") no-repeat 0px 223px;
+}
+.balloon1{
+    position:absolute;
+    background:url("../images/balloon1.png") no-repeat;
+    width:176px;
+    height:279px;
+    left:106px;
+    top: 300px;
+}
+.balloon2{
+    position:absolute;
+    background:url("../images/balloon2.png") no-repeat;
+    width:165px;
+    height:229px;
+    left:391px;
+    top: 356px;
+}
+.balloon3{
+    position:absolute;
+    background:url("../images/balloon3.png") no-repeat;
+    width:165px;
+    height:222px;
+    left:237px;
+    top: 602px;
+}
+.page4-bottom{
+    position:absolute;
+    top: 790px;
+    background:url("../images/page4-bottom.png") no-repeat;
+    width:640px;
+    height:226px;
+
+}
+.page4-bg>p{
+    width: 489px;
+    margin: 20px auto 0;
+    line-height: 35px;
+}
+.arrow{
+    position:absolute;
+    bottom: 160px;
+    left:43%
+}
+
+
+/*动画*/
+.pt-page-moveToTop {
+    -webkit-animation: moveToTop .6s ease both;
+    -moz-animation: moveToTop .6s ease both;
+    -ms-animation: moveToTop .6s ease both;
+    -o-animation: moveToTop .6s ease both;
+    animation: moveToTop .6s ease both;
+}
+
+.pt-page-moveFromBottom {
+    -webkit-animation: moveFromBottom .6s ease both;
+    -moz-animation: moveFromBottom .6s ease both;
+    -ms-animation: moveFromBottom .6s ease both;
+    -o-animation: moveFromBottom .6s ease both;
+    animation: moveFromBottom .6s ease both;
+}
+.pt-page-moveFromTop {
+    -webkit-animation: moveFromTop .6s ease both;
+    -moz-animation: moveFromTop .6s ease both;
+    -ms-animation: moveFromTop .6s ease both;
+    -o-animation: moveFromTop .6s ease both;
+    animation: moveFromTop .6s ease both;
+}
+.pt-page-moveIconUp {
+    -webkit-animation: moveIconUp ease 1.5s both infinite;
+    -moz-animation: moveIconUp ease 1.5s both infinite;
+    -ms-animation: moveIconUp ease 1.5s both infinite;
+    -o-animation: moveIconUp ease 1.5s both infinite;
+    animation: moveToBottom ease 1.5s both infinite;
+}
+
+.pt-page-moveToBottom {
+    -webkit-animation: moveToBottom .6s ease both;
+    -moz-animation: moveToBottom .6s ease both;
+    -ms-animation: moveToBottom .6s ease both;
+    -o-animation: moveToBottom .6s ease both;
+    animation: moveToBottom .6s ease both;
+}
+
+
+@-webkit-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); }
+}
+@-ms-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); }
+}
+@-o-keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+    from { }
+    to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+@-webkit-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@-ms-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@-o-keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+    from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+@-webkit-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@-moz-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@-ms-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@-o-keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+    from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    100% { -webkit-transform: translateY(0);}
+}
+@-moz-keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    100% { -webkit-transform: translateY(0);}
+}
+@-ms-keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    100% { -webkit-transform: translateY(0);}
+}
+@-o-keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    100% { -webkit-transform: translateY(0);}
+}
+@keyframes moveIconUp {
+    0% { -webkit-transform: translateY(-100%); opacity:0;}
+    100% { -webkit-transform: translateY(0);}
+}
+
+@-webkit-keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); }
+}
+@-moz-keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); }
+}
+@-ms-keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); }
+}
+@-o-keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+    from { }
+    to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+
+body{
+    width:100%;
+}
+
+
+.hide{ display:none;}
+
+.pages{
+    width:100%;
+    height:100%;
+    position:absolute;
+    font-size:10rem;
+    text-align:center;
+}
+
+.pages .wrap{
+    height:100%;
+    position:relative;
+}
+
+.page-current{
+    z-index:1;
+}
+
+.page .img_1 {
+    height: auto;
+    width: 93%;
+    position: absolute;
+    left: 6%;
+    top: 8%;
+}
+.clear,
+.clr {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    height: 0;
+    line-height: 0;
+    font-size: 0
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}

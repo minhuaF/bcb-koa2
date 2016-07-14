@@ -1,0 +1,133 @@
+@charset "utf-8";
+.page{
+    max-width: 640px;
+    margin:0 auto;
+    padding-bottom: 105px;
+    padding-top: 93px;
+}
+.f-nav,.buy-now{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    font-size: 2rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%;
+}
+
+.buy-now {
+    padding: 0;
+}
+.buy-now span:last-child{
+    font-size: 3rem;
+    color: #fff;
+    background-color: #db3838;
+    display: inline-block;
+    width: 497px;
+    height: 86px;
+    line-height: 86px;
+    text-align: center;
+}
+.service{
+    display: inline-block;
+    font-size: 2.4rem;
+    color: #db3838;
+    margin: -10px 47px 0;
+    position: relative;
+    top: 22px;
+}
+.service i{
+    display: block;
+    background: url("../images/icons.png") -67px -359px no-repeat;
+    width: 47px;
+    height: 47px;
+    position: relative;
+    top: -5px;
+    left: 3px;
+}
+.f-nav li{
+    float:left;
+    width:33.3%;
+    text-align: center;
+    position: relative;
+}
+.f-nav i{
+    background: url("../images/icons.png") no-repeat;
+    width:50px;
+    height:57px;
+    display: block;
+    margin:0 auto 9px;
+}
+.f-nav{
+    background-color: #f7f7f7;
+}
+.home i{
+    background-position: -64px 0;
+}
+.product i{
+    background-position: 0 -61px;
+}
+.mine i{
+    background-position: 0 -122px;
+}
+.active{
+    color:#db3838;
+}
+.home.active i{
+    background-position: 0 0;
+}
+.product.active i{
+    background-position: -64px -61px;
+}
+.mine.active i{
+    background-position: -64px -122px;
+}
+.title{
+    background-color: #dc3839;
+    height:93px;
+    color:#fff;
+    text-align: center;
+    line-height: 93px;
+    font-size: 3.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100%;
+}
+.back{
+    background: url("../images/icons.png") 0 -182px no-repeat;
+    width:17px;
+    height:27px;
+    position: absolute;
+    top:34px;
+    left:23px;
+}
+.share{
+    background: url("../images/icons.png") 0 -221px no-repeat;
+    width:33px;
+    height:34px;
+    position: absolute;
+    top:24px;
+    right:33px;
+}
+.info{
+    background: url("../images/icons.png") -67px -184px no-repeat;
+    width:31px;
+    height:31px;
+    position: absolute;
+    top:30px;
+    right:33px;
+}
+.f-nav a{
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.hide{
+    display: none;
+}
+
+
