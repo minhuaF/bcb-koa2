@@ -2,6 +2,7 @@
 const Koa = require('koa');
 const app = new Koa();
 const router = require('koa-router')();
+const mount = require('mount-koa-routes');
 const views = require('koa-views');
 const co = require('co');
 const convert = require('koa-convert'); // 对以generator作为中间件的写法进行长期支持
@@ -32,22 +33,25 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 
-// routes 路由
-const index = require('./application/routes/index');
-const users = require('./application/routes/users');
-const login = require('./application/routes/login');
-const demo = require('./application/routes/demo');
-const productlist = require('./application/routes/productlist');
+// 路由方式一
 
-// 定义路由
-router.use('/', index.routes(), index.allowedMethods());
-router.use('/users', users.routes(), users.allowedMethods());
-router.use('/signin', login.routes(), login.allowedMethods());
-router.use('/demo', demo.routes(), demo.allowedMethods());
-router.use('/productlist', productlist.routes(), productlist.allowedMethods());
+// // routes 路由
+// const index = require('./application/routes/index');
+// const users = require('./application/routes/users');
+// const login = require('./application/routes/login');
+// const demo = require('./application/routes/demo');
+// const productlist = require('./application/routes/productlist');
+// // 定义路由
+// router.use('/', index.routes(), index.allowedMethods());
+// router.use('/users', users.routes(), users.allowedMethods());
+// router.use('/signin', login.routes(), login.allowedMethods());
+// router.use('/demo', demo.routes(), demo.allowedMethods());
+// router.use('/productlist', productlist.routes(), productlist.allowedMethods());
+// // 使路由生效
+// app.use(router.routes(), router.allowedMethods());
 
-// 使路由生效
-app.use(router.routes(), router.allowedMethods());
+// 路由方式一
+mount(app, __dirname + '/application/routes', true);
 
 // 监听错误
 app.on('error', (err, ctx) => {
